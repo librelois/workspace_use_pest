@@ -1,0 +1,12 @@
+[package]
+name = "workspace_use_pest"
+version = "0.1.0"
+authors = ["librelois <elois@ifee.fr>"]
+
+[dependencies]
+my-sub-crate = { path = "./my-sub-crate" }
+
+[workspace]
+members = [
+    "my-sub-crate",
+]

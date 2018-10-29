@@ -1,0 +1,6 @@
+nl = _{ "\n" }
+hexa = { ASCII_DIGIT | 'A'..'F' }
+base58 = { !("O" | "I" | "l") ~ ASCII_ALPHANUMERIC }
+base64 = { ASCII_ALPHANUMERIC | "+" | "/" }
+
+integer = @{ "0" | ('1'..'9' ~ ASCII_DIGIT*) }
